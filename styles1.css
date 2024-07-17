@@ -1,0 +1,571 @@
+:root {
+    --bg-color: #141414;
+    --container-bg-color: #1C1F24;
+    --button-bg-color: #282B30;
+    --text-color: #fff;
+    --box-shadow-color: rgba(0, 0, 0, 0.5);
+    --blue-circle-color: #1e90ff;
+    --mining-bg-color: #2b2b2b;
+    --mining-time-bg-color: #1e90ff;
+    --footer-bg-color: #2b2b2b;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+:root {
+    --bg-color: #141414;
+    --container-bg-color: #1C1F24;
+    --button-bg-color: #282B30;
+    --text-color: #fff;
+    --box-shadow-color: rgba(0, 0, 0, 0.5);
+    --blue-circle-color: #1e90ff;
+    --mining-bg-color: #2b2b2b;
+    --mining-time-bg-color: #1e90ff;
+    --footer-bg-color:#2b2b2b;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 360px;
+    width: 100%;
+    background-color: var(--container-bg-color);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px var(--box-shadow-color);
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header__user-info {
+    display: flex;
+    align-items: center;
+}
+
+.header__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header__username {
+    font-size: 1.2em;
+}
+
+.header__settings {
+    display: flex;
+    align-items: center;
+}
+
+.header__settings-btn, .header__language-btn {
+    background-color: var(--button-bg-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.header__settings-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.header__language-btn {
+    padding: 10px 15px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.stats__block {
+    background-color: var(--button-bg-color);
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: 2px solid red; /* Added red border */
+}
+.header__boost-btn{
+    text-decoration: none;
+}
+.amam{
+    color: #1e90ff;
+    text-decoration: none;
+}
+.stats__icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.stats__title {
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.stats__time {
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+
+.stats__value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.central-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.central-info__coin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.central-info__coin-img {
+    width: 20px;
+    height: 20px;
+}
+
+.central-info__coin-value {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.central-info__image {
+    display: flex;
+    justify-content: center;
+}
+
+.central-info__lion-img {
+    width: 230px;
+    height: 230px;
+}
+
+.energy {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.energy__block, .boost__block {
+    display: flex;
+    align-items: center;
+}
+
+.energy__icon, .boost__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.energy__value, .boost__value {
+    font-size: 1.2em;
+}
+
+.mining {
+    background-color: var(--mining-bg-color);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--box-shadow-color);
+    margin-top: 20px;
+}
+
+.mining__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mining__title {
+    flex: 1;
+    text-align: left;
+}
+
+.mining__value {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mining__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.mining__time {
+    flex: 1;
+    background-color: var(--mining-time-bg-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px blue;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--footer-bg-color);
+    padding:15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.footer__item {
+    text-align: center;
+}
+
+.footer__icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.footer__text {
+    font-size: 1em;
+}
+
+
+.container {
+    max-width: 360px;
+    width: 100%;
+    background-color: var(--container-bg-color);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px var(--box-shadow-color);
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header__user-info {
+    display: flex;
+    align-items: center;
+}
+
+.header__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header__username {
+    font-size: 1.2em;
+}
+
+.header__settings {
+    display: flex;
+    align-items: center;
+}
+
+.header__settings-btn, .header__language-btn {
+    background-color: var(--button-bg-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.header__settings-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.header__language-btn {
+    padding: 10px 15px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.stats__block {
+    background-color: var(--button-bg-color);
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin: 0 5px; /* Добавлен отступ */
+}
+
+.stats__title {
+    display: block;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.stats__value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.central-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.central-info__coin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.central-info__coin-img {
+    width: 20px;
+    height: 20px;
+}
+
+.central-info__coin-value {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.central-info__image {
+    display: flex;
+    justify-content: center;
+}
+
+.central-info__lion-img {
+    width: 230px;
+    height: 230px;
+}
+
+.energy {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.energy__block, .boost__block {
+    display: flex;
+    align-items: center;
+    margin: 0 5px; /* Добавлен отступ */
+}
+
+.energy__icon, .boost__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.energy__value, .boost__value {
+    font-size: 1.2em;
+}
+
+.boosters {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.boosters__daily h3, .boosters__special h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.boosters__daily-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.buy-btn {
+    background-color: var(--button-bg-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 1em;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.boosters__special-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--button-bg-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.boosters__special-item .boosters__special-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.boosters__special-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.boosters__daily-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--button-bg-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 45%; /* Увеличена ширина элементов для более красивого вида */
+    margin: 0 5px; /* Добавлен отступ */
+}
+
+.boosters__icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+
+
+ .boosters__special-right {
+    display: flex;
+    align-items: center;
+}
+
+.boosters__special-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.mining {
+    background-color: var(--mining-bg-color);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--box-shadow-color);
+    margin-top: 20px;
+}
+
+.mining__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mining__title {
+    flex: 1;
+    text-align: left;
+}
+
+.mining__value {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mining__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.mining__time {
+    flex: 1;
+    background-color: var(--mining-time-bg-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px blue;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--footer-bg-color);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.footer__item {
+    text-align: center;
+}
+
+.footer__icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.footer__text {
+    font-size: 1em;
+}

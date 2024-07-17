@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TON Station - Mine</title>
+    <style>
+        /* CSS styles here */
+        :root {
+            --bg-color: #141414;
+            --container-bg-color: #1C1F24;
+            --button-bg-color: #282B30;
+            --text-color: #fff;
+            --box-shadow-color: rgba(0, 0, 0, 0.5);
+            --blue-circle-color: #1e90ff;
+            --mining-bg-color: #2b2b2b;
+            --mining-time-bg-color: #1e90ff;
+            --footer-bg-color: #2b2b2b;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            font-size: 2.5em;
+           margin-top: 200px;
+           color: #007aff;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .tab {
+            margin: 0 10px;
+            padding: 10px;
+            cursor: pointer;
+            color: #007aff;
+        }
+
+        .tab.active {
+            font-weight: bold;
+            border-bottom: 2px solid #007aff;
+        }
+
+        .cards-container {
+            flex: 1;
+            max-height: 60vh;
+            overflow-y: auto;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #f0f0f5;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 120px;
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 220px;
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-title {
+            margin: 5px 0;
+            font-size: 0.8em;
+        }
+
+        .card-subtitle {
+            font-size: 0.6em;
+            color: #777;
+        }
+
+        .card-details {
+            font-size: 0.6em;
+            color: #333;
+        }
+
+        .buy-button {
+            background-color: #007aff;
+            color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+            font-size: 0.8em;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            margin-top: 15px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            max-width: 500px;
+            background-color: var(--footer-bg-color);
+            padding: 10px 0;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #8e8e93;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: white;
+            background-color: #333;
+            border-radius: 10px;
+        }
+
+        .footer img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 5px;
+            filter: invert(1);
+        }
+
+        .footer div {
+            text-align: center;
+            color: white;
+            flex-grow: 1;
+        }
+
+        .footer div.active {
+            color: #007aff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Airdrop - Coming Soon...</h1>
+      
+       
+    </div>
+    <div class="footer-container">
+        <footer class="footer">
+            <div class="footer__item">
+                <img src="game-icon.png" alt="Game" class="footer__icon">
+                <span class="footer__text"><a href="index.html">Game</a></span>
+            </div>
+            <div class="footer__item">
+                <img src="mine-icon.png" alt="Mine" class="footer__icon">
+                <span class="footer__text"><a href="Mine.html">Mine</a></span>
+            </div>
+            <div class="footer__item">
+                <img src="tasks-icon.png" alt="Tasks" class="footer__icon">
+                <span class="footer__text"><a href="tasks.html">Tasks</a></span>
+            </div>
+            <div class="footer__item">
+                <img src="friends-icon.png" alt="Friends" class="footer__icon">
+                <span class="footer__text"><a href="Friends.html">Friends</a></span>
+            </div>
+            <div class="footer__item">
+                <img src="airdrop.png" alt="Airdrop" class="footer__icon">
+                <span class="footer__text"><a href="Airdrop.html">Airdrop</a></span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

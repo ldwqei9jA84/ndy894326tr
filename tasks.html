@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --bg-color: #141414;
+            --container-bg-color: #1C1F24;
+            --button-bg-color: #282B30;
+            --text-color: #fff;
+            --box-shadow-color: rgba(0, 0, 0, 0.5);
+            --blue-circle-color: #1e90ff;
+            --mining-bg-color: #2b2b2b;
+            --mining-time-bg-color: #1e90ff;
+            --footer-bg-color:#2b2b2b;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+    color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .header {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .header img {
+            width: 100px;
+            height: auto;
+        }
+
+        .tasks-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            background-size: cover;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 8px 0;
+            border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 10px;
+        }
+
+        .task-item:last-child {
+            border-bottom: none;
+        }
+
+        .task-text {
+            flex-grow: 1;
+            text-align: left;
+            font-size: 15px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .task-text span {
+            font-size: 12px;
+            opacity: 0.6;
+        }
+
+        .task-button {
+            background: rgba(0, 0, 0, 0.5);
+            width: 100px;
+            height: 50px;
+            border: 10px solid transparent;
+            border-image: url('https://i.ibb.co/5xTn2Zw/Rectangle-9.png') 30 stretch;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .task-button:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .container {
+            max-width: 360px;
+            width: 100%;
+            background-color: var(--container-bg-color);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 10px var(--box-shadow-color);
+            text-align: center;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: var(--footer-bg-color);
+            padding:15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .footer__item {
+            text-align: center;
+        }
+        
+        .footer__icon {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 5px;
+        }
+        
+        .footer__text {
+            font-size: 1em;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header cotainer">
+        <img src="coin3.png" alt="Logo">
+    </div>
+    <div class="tasks-list container">
+        <div class="task-item">
+            <div class="task-text">
+                Subscribe to channel
+                <span>+140</span>
+            </div>
+            <a href="https://t.me/troschiy" class="task-button" id="task1" onclick="completeTask('task1', 140, 'https://t.me/telegabotua')">Start</a>
+        </div>
+        <div class="task-item">
+            <div class="task-text">
+                Subscribe to channel
+                <span>+140</span>
+            </div>
+            <a href="https://t.me/troschiy" class="task-button" id="task2" onclick="completeTask('task2', 140, 'https://t.me/troschiy')">Start</a>
+        </div>
+        <div class="task-item">
+            <div class="task-text">
+                Subscribe to channel
+                <span>+140</span>
+            </div>
+            <a href="https://t.me/troschiy" class="task-button" id="task3" onclick="completeTask('task3', 140, 'https://t.me/trevolucky_bot')">Start</a>
+        </div>
+    </div>
+    <footer class="footer container">
+        <div class="footer__item">
+            <img src="game-icon.png" alt="Game" class="footer__icon">
+            <a href="index.html"><span class="footer__text">Game</span></a>
+        </div>
+        <div class="footer__item">
+            <img src="mine-icon.png" alt="Mine" class="footer__icon">
+            <a href="mine.html"><span class="footer__text">Mine</span></a>
+        </div>
+        <div class="footer__item">
+            <img src="tasks-icon.png" alt="Tasks" class="footer__icon">
+            <a href="tasks.html"><span class="footer__text">Tasks</span></a>
+        </div>
+        <div class="footer__item">
+            <img src="friends-icon.png" alt="Friends" class="footer__icon">
+            <a href="friends.html"><span class="footer__text">Frineds</span></a>
+        </div>
+        <div class="footer__item">
+            <img src="airdrop.png" alt="Airdrop" class="footer__icon">
+            <a href="airdrop.html"><span class="footer__text">Airdrop</span></a>
+        </div>
+    </footer>
+</body>
+</html>

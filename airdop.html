@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TON Station</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            overflow-y: scroll;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            max-width: 800px; /* Ширина контента, если нужно ограничить */
+            margin: auto; /* Автоматический отступ по краям для центрирования */
+            padding: 10px;
+        }
+        .container {
+            text-align: center;
+            position: relative;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+        .header {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #007aff;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            bottom: 20px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            max-width: 500px;
+            background-color: rgb(78, 78, 78);
+            padding: 5px 0;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .footer a {
+            text-decoration: none;
+            color: #8e8e93;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px; /* Добавлен отступ вокруг содержимого ссылки */
+            transition: all 0.3s ease; /* Плавное изменение стилей при наведении */
+        }
+        .footer a:hover {
+            color: white; /* Изменение цвета текста при наведении */
+            background-color: #333; /* Изменение цвета фона при наведении */
+            border-radius: 10px; /* Добавление закругленных углов при наведении */
+        }
+        .footer img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 5px;
+            filter: invert(1); /* Инвертирование цвета иконки */
+        }
+        .footer a:nth-child(5) {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px; /* Увеличиваем отступ вокруг содержимого ссылки */
+}
+
+.footer a:nth-child(3):hover {
+    background-color: #333; /* Изменение цвета фона при наведении */
+}
+
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <img width="150px" height="150px" src="hamster3.png" alt="TON Station Image">
+        <div class="header">Coming Soon....</div>
+       
+        <div class="footer-container">
+            <div class="footer">
+                <a href="index.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Home_font_awesome.svg/800px-Home_font_awesome.svg.png" alt="Home">
+                    <span>Home</span>
+                </a>
+                <a href="mine.html">
+                    <img src="mine.png" alt="mine">
+                    <span>Mine</span>
+                </a>
+                <a href="boost.html">
+                    <img src="https://cdn2.iconfinder.com/data/icons/rpg-fantasy-game-basic-ui/512/game_ui_scroll_quest_paper_treasure_adventure-512.png" alt="mine">
+                    <span>Quests</span>
+                </a>
+                <a href="ref.html">
+                    <img src="ref.png" alt="Home">
+                    <span>Referrals</span>
+                </a>
+                <a href="airdop.html">
+                    <img src="airdrop.png" alt="Home">
+                    <span>AirDrop</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
